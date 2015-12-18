@@ -1,0 +1,33 @@
+body {
+  background-image: url("../img/upfeathers.png");
+  background-repeat: repeat;
+}
+
+#content {
+  margin-top: 2em;
+  background-color: white;
+  padding: 0.5em;
+}
+
+div.banner img.banner-face {
+  position: relative;
+  display: block;
+  margin: auto;
+  top: -6em;
+  border: 0.4em solid white;
+  height: 12em;
+  width: auto;
+}
+
+div.banner div.banner-top-half {
+  background-image: url("../img/wood_background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.banner-half {
+  position: relative;
+  height: 8em;
+  width: 100%;
+}
