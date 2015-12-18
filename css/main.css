@@ -26,8 +26,88 @@ div.banner div.banner-top-half {
   background-size: cover;
 }
 
+div.banner ul.banner-buttons {
+  position: relative;
+  left: -3.5em;
+  top: -19em;
+}
+
+div.banner ul.banner-buttons li {
+  margin: 0.4em 0em;
+}
+
+div.banner ul.banner-buttons li a {
+  color: #263238;
+}
+
+div.banner ul.banner-buttons span {
+  background-color: white;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+div.banner ul.banner-buttons span.icon {
+  display: inline-block;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  padding: 0.3em 0.3em 0em 0.3em;
+}
+
+div.banner ul.banner-buttons span.label {
+  display: none;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  margin-left: -5px;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-right: 0.6em;
+}
+
+div.banner ul.banner-buttons li a:hover span {
+  display: inline-block;
+  background-color: #f9a825;
+}
+
+div.banner ul.banner-buttons span.icon i.material-icons {
+  font-size: 2em;
+
+}
+
 div.banner-half {
   position: relative;
   height: 8em;
   width: 100%;
+}
+
+
+div.editor div.editor-tab-container {
+  background-color: black;
+  height: 3em;
+}
+
+div.editor div.editor-tab-container * {
+  position: relative;
+  top: 1.2em;
+}
+
+div.editor div.editor-tab-container span.editor-tab.active {
+  color: #fafafa;
+  background-color: #212121;
+}
+
+div.editor div.editor-tab-container span.editor-tab:first-child {
+  margin-left: 0.6em;
+}
+div.editor div.editor-tab-container span.editor-tab {
+  color: #e0e0e0;
+  background-color: #424242;
+  font-size: 1.2em;
+  padding: 0.5em 0.5em 0em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  margin: auto 0em 0em 0em;
+}
+
+div.editor div.editor-file-container {
+  background-color: #212121;
 }
