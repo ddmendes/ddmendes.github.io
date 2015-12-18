@@ -1,10 +1,12 @@
 body {
   background-image: url("../img/upfeathers.png");
   background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 #content {
   margin-top: 2em;
+  margin-bottom: 2em;
   background-color: white;
   padding: 0.5em;
 }
