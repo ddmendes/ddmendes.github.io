@@ -79,6 +79,14 @@ div.banner-half {
   width: 100%;
 }
 
+div.editor {
+  background-color: black;
+  font-family: Consolas, Lucida, Monospace;
+}
+
+div.editor div.row {
+  margin-bottom: 0px;
+}
 
 div.editor div.editor-tab-container {
   background-color: black;
@@ -91,13 +99,14 @@ div.editor div.editor-tab-container * {
 }
 
 div.editor div.editor-tab-container span.editor-tab.active {
-  color: #fafafa;
+  color: #9e9e9e;
   background-color: #212121;
 }
 
 div.editor div.editor-tab-container span.editor-tab:first-child {
   margin-left: 0.6em;
 }
+
 div.editor div.editor-tab-container span.editor-tab {
   color: #e0e0e0;
   background-color: #424242;
@@ -110,4 +119,26 @@ div.editor div.editor-tab-container span.editor-tab {
 
 div.editor div.editor-file-container {
   background-color: #212121;
+}
+
+div.editor-line {
+  display: table-row;
+}
+
+div.editor-line span.line-number {
+  display: table-cell;
+  width: 3em;
+  text-align: right;
+  padding-left: 0.5em;
+  padding-right: 1em;
+  color: #9e9e9e;
+}
+
+div.editor-line span.line-content {
+  display: table-cell;
+  color: white;
+}
+
+div.editor-line span.line-content span.command {
+  color: #81d4fa;
 }
