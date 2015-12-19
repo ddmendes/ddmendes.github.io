@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="css/ddmendes.css" />
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,19 +17,31 @@
         <div class="banner-half">
           <img src="img/face.jpg" class="circle banner-face" />
           <ul class="banner-buttons">
-            <li>
+            <li id="btn_en">
               <a href="#">
                 <span class="icon"><i class="material-icons">translate</i></span>
                 <span class="label">English version</span>
               </a>
             </li>
-            <li>
+            <li id="btn_pt">
+              <a href="#">
+                <span class="icon"><i class="material-icons">translate</i></span>
+                <span class="label">Versão em português</span>
+              </a>
+            </li>
+            <li id="btn_code">
+              <a href="#">
+                <span class="icon"><i class="material-icons">code</i></span>
+                <span class="label">Ver código</span>
+              </a>
+            </li>
+            <li id="btn_resume">
               <a href="#">
                 <span class="icon"><i class="material-icons">insert_drive_file</i></span>
                 <span class="label">Ver currículo</span>
               </a>
             </li>
-            <li>
+            <li id="btn_download">
               <a href="#">
                 <span class="icon"><i class="material-icons">picture_as_pdf</i></span>
                 <span class="label">Baixar currículo</span>
@@ -179,7 +191,7 @@
               <div class="editor-line">
                 <span class="line-number">15</span>
                 <span class="line-content">
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="command">\href</span>{https://br.linkedin.com/in/dav<br/>im/}{linkedin.com/in/davim/}
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="command">\href</span>{https://br.linkedin.com/in/davim/}{linkedin.com/in/davim/}
                 </span>
               </div>
               <div class="editor-line">
@@ -651,10 +663,154 @@
             <!-- END OF MAIN_CONTENT.TEX -->
           </div>
         </div>
+        <div class="row">
+          <div class="col s12">
+            <!-- BEGIN OF RESUME.TEX -->
+            <div class="editor-tab-container">
+              <span class="editor-tab active">resume.tex</span>
+            </div>
+            <div class="editor-file-container">
+              <div class="editor-line">
+                <span class="line-number">1</span>
+                <span class="line-content">
+                  <span class="command">\documentclass</span>[]{friggeri-cv}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">2</span>
+                <span class="line-content">
+                  <span class="command">\usepackage</span>{afterpage}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">3</span>
+                <span class="line-content">
+                  <span class="command">\usepackage</span>{hyperref}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">4</span>
+                <span class="line-content">
+                  <span class="command">\usepackage</span>{color}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">5</span>
+                <span class="line-content">
+                  <span class="command">\usepackage</span>{xcolor}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">6</span>
+                <span class="line-content">
+                  <span class="command">\hypersetup</span>{
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">7</span>
+                <span class="line-content">
+                  &nbsp;&nbsp;pdftitle={},
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">8</span>
+                <span class="line-content">
+                  &nbsp;&nbsp;pdfauthor={},
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">9</span>
+                <span class="line-content">
+                  &nbsp;&nbsp;pdfsubject={},
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">10</span>
+                <span class="line-content">
+                  &nbsp;&nbsp;pdfkeywords={},
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">11</span>
+                <span class="line-content">
+                  &nbsp;&nbsp;colorlinks=false,
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">12</span>
+                <span class="line-content">
+                  &nbsp;&nbsp;allbordercolors=white
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">13</span>
+                <span class="line-content">
+                  }
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">14</span>
+                <span class="line-content">
+                  <span class="command">\RequirePackage</span>{xcolor}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">15</span>
+                <span class="line-content">
+                  <span class="command">\definecolor</span>{pblue}{HTML}{0395DE}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">16</span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">17</span>
+                <span class="line-content">
+                  <span class="command">\begin</span>{document}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">18</span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">19</span>
+                <span class="line-content">
+                  &nbsp;&nbsp;<span class="command">\input</span>{./header.tex}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">20</span>
+                <span class="line-content">
+                  &nbsp;&nbsp;<span class="command">\input</span>{./aside.tex}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">21</span>
+                <span class="line-content">
+                  &nbsp;&nbsp;<span class="command">\input</span>{./main_content.tex}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">22</span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">23</span>
+                <span class="line-content">
+                  <span class="command">\end</span>{document}
+                </span>
+              </div>
+              <div class="editor-line">
+                <span class="line-number">24</span>
+              </div>
+            </div>
+            <!-- END OF RESUME.TEX -->
+          </div>
+        </div>
       </div>
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/ddmendes.js"></script>
   </body>
 </html>

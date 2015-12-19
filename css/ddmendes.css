@@ -38,6 +38,10 @@ div.banner ul.banner-buttons li {
   margin: 0.4em 0em;
 }
 
+div.banner ul.banner-buttons li[id^="btn_"] {
+  display: none;
+}
+
 div.banner ul.banner-buttons li a {
   color: #263238;
 }
