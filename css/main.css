@@ -90,6 +90,10 @@ div.editor div.row {
   margin-bottom: 0px;
 }
 
+div.editor div.col {
+  height: 100%;
+}
+
 div.editor div.editor-tab-container {
   background-color: black;
   height: 3em;
@@ -121,6 +125,7 @@ div.editor div.editor-tab-container span.editor-tab {
 
 div.editor div.editor-file-container {
   background-color: #212121;
+  height: 100%;
 }
 
 div.editor-line {
@@ -143,4 +148,8 @@ div.editor-line span.line-content {
 
 div.editor-line span.line-content span.command {
   color: #81d4fa;
+}
+
+div.editor-line span.line-content span.symbol {
+  color: #ffc107;
 }
