@@ -85,7 +85,109 @@ div.banner-half {
   width: 100%;
 }
 
+div.resume {
+  display: none;
+  padding-top: 1em;
+  color: #424242;
+  font-weight: 500;
+}
+
+div.resume strong {
+  font-weight: 800;
+}
+
+div.resume div.aside {
+  text-align: right;
+  font-size: 1em;
+}
+
+div.resume div.aside h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2196f3;
+  margin: 1em 0em 0em 0em;
+}
+
+div.resume div.aside h1:first-child {
+  margin: 0em;
+}
+
+div.resume div.aside a {
+  color: inherit;
+}
+
+div.resume div.content div.name,
+div#footer div.name {
+  font-size: 3.3em;
+  font-weight: 200;
+  padding-left: 1.5em;
+  margin: -0.3em 0em;
+}
+
+div.resume div.content div.name strong,
+div#footer div.name strong {
+  font-weight: 400;
+}
+
+div.resume div.content div.role {
+  padding-left: 2.8em;
+  font-size: 1.6em;
+  color: #2196f3;
+}
+
+div.resume div.content div.divider {
+  height: 1em;
+  background-color: #424242;
+}
+
+div.resume div.content h1 {
+  font-size: 1.8em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+div.resume div.content h2 {
+  display: inline-block;
+  font-size: 1.09em;
+  padding-top: 0.1em;
+  margin: 0;
+}
+
+div.resume div.content h3 {
+  display: inline-block;
+  padding-top: 0.343em;
+  font-size: 0.9em;
+  color: #2196f3;
+  float: right;
+  margin: 0em;
+}
+
+div.resume div.content h1,
+div.resume div.content h2 {
+  font-weight: 700;
+}
+
+div.resume div.content h1 span {
+  color: #2196f3;
+}
+
+div.resume div.content p {
+  text-align: justify;
+}
+
+div.resume div.content ul {
+  margin: 0em;
+}
+
+div#footer div.name {
+  display: inline-block;
+  padding: 0em 0.2em;
+  margin: 0.2em 0.2em 0em 0em;
+  border-right: 1px solid #424242;
+}
+
 div.editor {
+  display: none;
   background-color: black;
   font-family: Consolas, Lucida, Monospace;
 }
@@ -139,6 +241,7 @@ div.editor-line {
 div.editor-line span.line-number {
   display: table-cell;
   width: 3em;
+  min-width: 3em;
   text-align: right;
   padding-left: 0.5em;
   padding-right: 1em;
